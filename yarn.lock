@@ -152,6 +152,11 @@ chokidar@^3.3.0:
   optionalDependencies:
     fsevents "~2.1.2"
 
+clsx@^1.0.4:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-1.1.0.tgz#62937c6adfea771247c34b54d320fb99624f5702"
+  integrity sha512-3avwM37fSK5oP6M5rQ9CNe99lwxhXDOeSWVPAOYF6OazUTgZCMb0yWlJpmdD74REy1gkEaFiub2ULv4fq9GUhA==
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -291,6 +296,16 @@ local-access@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/local-access/-/local-access-1.0.1.tgz#5121258146d64e869046c642ea4f1dd39ff942bb"
   integrity sha512-ykt2pgN0aqIy6KQC1CqdWTWkmUwNgaOS6dcpHVjyBJONA+Xi7AtSB1vuxC/U/0tjIP3wcRudwQk1YYzUvzk2bA==
+
+lodash.isobject@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/lodash.isobject/-/lodash.isobject-3.0.2.tgz#3c8fb8d5b5bf4bf90ae06e14f2a530a4ed935e1d"
+  integrity sha1-PI+41bW/S/kK4G4U8qUwpO2TXh0=
+
+lodash.tonumber@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/lodash.tonumber/-/lodash.tonumber-4.0.3.tgz#0b96b31b35672793eb7f5a63ee791f1b9e9025d9"
+  integrity sha1-C5azGzVnJ5Prf1pj7nkfG56QJdk=
 
 magic-string@^0.25.2:
   version "0.25.7"
@@ -465,6 +480,15 @@ svelte@^3.0.0:
   version "3.22.3"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.22.3.tgz#6af3bdcfea44c2fadbf17a32c479f49bdf1aba4b"
   integrity sha512-DumSy5eWPFPlMUGf3+eHyFSkt5yLqyAmMdCuXOE4qc5GtFyLxwTAGKZmgKmW2jmbpTTeFQ/fSQfDBQbl9Eo7yw==
+
+sveltestrap@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/sveltestrap/-/sveltestrap-3.3.3.tgz#28c2192ed17b6e81dc67332c500eaa87dba8c31d"
+  integrity sha512-/uCWhyYkKA2BTZfwukXvGaxocrsG6WRyaqmNZsYXKUaPkbsf8nSeKOJqHFVjDXnSuSsrvkOBEaRP/TSNI6htdw==
+  dependencies:
+    clsx "^1.0.4"
+    lodash.isobject "^3.0.2"
+    lodash.tonumber "^4.0.3"
 
 terser@^4.6.2:
   version "4.7.0"
