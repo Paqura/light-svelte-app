@@ -4,6 +4,5 @@
 </script>
 
 <main>
-	Hello
 	<Table />
 </main>
