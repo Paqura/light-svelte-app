@@ -2,13 +2,13 @@
 import { onMount } from 'svelte';
 import { Table } from 'sveltestrap';
 import { coronaService } from '../services/corona';
+import { coronaData } from '../stores';
 
 let loading = true
-let data = []
 
 onMount(async () => {
   const response = await coronaService.getCountries()
-  data = response
+  coronaData.set(response)
   loading = false
 })
 
@@ -30,7 +30,7 @@ onMount(async () => {
     </tr>
   </thead>
   <tbody>
-    {#each data as item, idx}
+    {#each $coronaData as item, idx}
       <tr>
         <td>{idx}</td>
         <td>
@@ -44,7 +44,7 @@ onMount(async () => {
         </td>
         <td>
           <span>
-            <img src={item.countryInfo.flag} alt={`Flag of ${data.country}`} width="32px" />
+            <img src={item.countryInfo.flag} alt={`Flag of ${item.country}`} width="32px" />
           </span>
         </td>
       </tr>
